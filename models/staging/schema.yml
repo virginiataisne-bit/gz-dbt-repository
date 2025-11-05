@@ -33,36 +33,20 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: advertising campaigns
-        columns:
-          - name: campaign_key
-            description: campaign
-            tests:
-              - unique
-              - not_null
       - name: bing
         identifier: raw_gz_bing
         description: advertising campaigns
-        columns:
-          - name: campaign_key
-            description: campaign
-            tests:
-              - unique
-              - not_null
       - name: criteo
         identifier: raw_gz_criteo
         description: advertising campaigns
-        columns:
-          - name: campaign_key
-            description: campaign
-            tests:
-              - unique
-              - not_null
       - name: facebook
         identifier: raw_gz_facebook
         description: advertising campaigns
+      - name: campaigns
+        identifier: int_campaigns
         columns:
           - name: campaign_key
-            description: campaign
+            description: PK
             tests:
               - unique
               - not_null
