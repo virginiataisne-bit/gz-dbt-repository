@@ -5,7 +5,7 @@ WITH sales_margin AS (
 
 SELECT
     orders_id,
-    MAX(date_date),
+    MAX(date_date)AS date_date,
     ROUND(SUM(revenue),2) AS revenue,
     SUM(quantity) AS quantity,
     ROUND(SUM(purchase_cost),2) AS purchase_cost,
